@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+</head>
+<body>
+    <h1 style="text-align: center;">Sign up form</h1>
+    <hr>
+    <form action="#" method="post">
+        <label for="user">Name:</label>
+        <input type="text" name="user" id="user" required placeholder="Your name"><br><br>
+        <label for="mail">E-mail:</label>
+        <input type="email" name="mail" id="mail" required placeholder="Your e-mail"><br><br>
+        <label for="pass">Password:</label>
+        <input type="password" name="pass" id="pass" required placeholder="password"><br><br>
+        <label for="phn">Phone:</label>
+        <select name="phn" id="phn">
+            <option value="+880">+880</option>
+            <option value="+660">+660</option>
+            <option value="+123">+123</option>
+            <option value="+996">+996</option>
+        </select>
+        <input type="number" name="phn" id="phn" required placeholder="Phone number"><br><br>
+        <label for="con1">Country:</label>
+        <input list="con" id="con1">
+        <datalist id="con">
+            <select>
+                <option value="Banglaesh" >Banglaesh</option>
+                <option value="Canada">Canada</option>
+                <option value="China">China</option>
+                <option value="America">America</option>
+            </select>
+        </datalist> <br><br>
+
+
+        <label for="gnd">Gender:</label>
+        <input type="radio" name="gnd" id="gnd">Male
+        <input type="radio" name="gnd" id="gnd">Female
+        <input type="radio" name="gnd" id="gnd">Other <br><br>
+        <label for="date">Date of Birth:</label>
+        <input type="date" name="date" id="date"><br><br>
+        <label for="time">Time:</label>
+        <input type="time" name="time" id="time"> <br><br>
+        <label for="col">Color:</label>
+        <input type="color" name="col" id="col"><br><br>
+        <label for="photo">Chosess Photo:</label>
+        <input type="file" name="photo" id="photo"><br><br>
+        <input type="checkbox" name="box" id="box">
+        <label for="box">I Agree</label>
+        <input type="checkbox" name="check" id="check">
+        <label for="check">Not Agree</label> <br><br>
+        <label for="com">Comment here:</label><br><br>
+        <textarea name="com" id="com" cols="50" rows="10" placeholder="Your Comment"></textarea><br><br>
+        <input type="submit" value="Send">
+        <input type="reset" value="Reset">
+
+
+    </form>
+</body>
+</html>
